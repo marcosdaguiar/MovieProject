@@ -90,7 +90,7 @@ body{
 
 .content{
   grid-area: content;
-  background: #rgb(20, 30, 48);
+  background: rgb(20, 30, 48);
   display: flex;
   padding-right: 8%;
   padding-left: 8%;
@@ -143,7 +143,7 @@ input[type="button"]{
 
 .side{
   grid-area: side;
-  background: #rgb(20, 30, 48);
+  background: rgb(20, 30, 48);
   border-left: 1px  solid #0c002971;
   color: white;
 }
