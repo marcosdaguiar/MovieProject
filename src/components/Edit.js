@@ -18,7 +18,7 @@ export const Edit = () => {
                     defaultValue='Original Description'
                     className='Edited Description'/>
             
-            <input type='submit' className='edit' value="Update"/>
+            <input type='submit' className='update' value="Update"/>
         </form>
 
     </div>
