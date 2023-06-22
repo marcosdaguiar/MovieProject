@@ -1,6 +1,10 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
+import { Edit } from './Edit';
 
 export const List = ({listState, setListState}) => {
+
+    const [edit, setEdit] = useState(0);
+
 
     useEffect(() =>{
         console.log("loaded components of the list of movies");
@@ -39,8 +43,14 @@ export const List = ({listState, setListState}) => {
                     <article key={movie.id} className="movie-item">
                         <h3 className="title">{movie.title}</h3>
                         <p className="description">{movie.description}</p>
-                        <button className="edit">Edit</button>
+                        <button className="edit" onClick={() => setEdit(movie.id)}>Edit</button>
                         <button className="delete" onClick={() => deleteMovie(movie.id)}>Delete</button>
+                        
+                        {/*form to edit appears here*/}
+                        {edit === movie.id && (
+                            <Edit />
+                        )}
+
                     </article>
                 );
             })
