@@ -33,7 +33,7 @@ export const Create = ({setListState}) => {
         //Update the list 
         setListState(elements => {
             return[...elements, movie];
-        })
+        });
 
         //save in the local storage
 

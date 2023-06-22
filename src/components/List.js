@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect} from 'react'
 
 export const List = ({listState, setListState}) => {
 
@@ -33,20 +33,19 @@ export const List = ({listState, setListState}) => {
 
   return (
     <>
-        {listState != null ? listState.map(movie => {
+        {listState != null ? 
+            listState.map(movie => {
                 return(
                     <article key={movie.id} className="movie-item">
                         <h3 className="title">{movie.title}</h3>
                         <p className="description">{movie.description}</p>
                         <button className="edit">Edit</button>
                         <button className="delete" onClick={() => deleteMovie(movie.id)}>Delete</button>
-                </article>
+                    </article>
                 );
             })
-            :<h2> There are no movies to show</h2>
+        :<h2>There are no movies in the list</h2>
         }
-
-            
     </>
 
   )
