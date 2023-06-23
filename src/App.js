@@ -22,10 +22,10 @@ function App() {
         {/*navigation bar*/}
         <nav className="nav">
             <ul>
-                <li><a href="/#">Home</a></li>
-                <li><a href="/#">Movies</a></li>
-                <li><a href="/#">Blog</a></li>
-                <li><a href="/#">Contact</a></li>
+                <li><a href="/#">My Favorite Movies</a></li>
+                <li><a href="/#">Now Playing</a></li>
+                <li><a href="/#">Top Rated</a></li>
+                <li><a href="/#">Upcoming</a></li>
             </ul>
         </nav>
         {/*principal content*/}
