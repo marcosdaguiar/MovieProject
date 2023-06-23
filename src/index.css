@@ -55,6 +55,21 @@ body{
   border-bottom: 6px solid transparent;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: logo-spin infinite 10s linear;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .nav{
   grid-area: nav;
   background: #395a80
@@ -181,8 +196,9 @@ textarea{
   margin-top: 15px;
   padding: 12px;
   border-radius: 5px;
-  background: #9aabdf;
+  background: #d1dcfc;
   color: #000000;
+  font-weight:bold;
   width: 90%;
   opacity: 3;
   outline: 0;
@@ -196,8 +212,9 @@ textarea{
   margin-top: 15px;
   padding: 12px;
   border-radius: 5px;
-  background: #9aabdf;
+  background: #d1dcfc;
   color: #000000;
+  font-weight:bold;
   width: 90%;
   opacity: 3;
   outline: 0;
