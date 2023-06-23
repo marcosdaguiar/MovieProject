@@ -46,8 +46,8 @@ body{
 }
 
 .play{
-  width: 0px;
-  height: 0px;
+  width: 1px;
+  height: 1px;
   margin-top: 11px;
   margin-left: 13px;
   border-left: 12px solid rgb(250, 0, 0);
