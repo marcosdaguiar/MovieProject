@@ -1,6 +1,10 @@
 /*general styles*/
 body{
-  background-color: rgb(20, 30, 48);
+  background: rgb(2, 28, 77);
+  background: linear-gradient(180deg,
+    rgb(1, 22, 59, 1)30%,
+    rgb(2, 28, 73)85%);
+ /* background-color: rgb(15, 34, 68);*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 0px;
@@ -17,14 +21,15 @@ body{
       "content content content side"
       "footer footer footer footer";
   
-  grid-template-rows: 100px 45px minmax(724px, auto) 50px;
+  grid-template-rows: 100px 40px minmax(724px, auto) 50px;
   grid-template-columns: auto auto auto minmax(250px, 400px);
 }
 
 
 .header{
   grid-area: header;
-  background: rgb(20, 30, 48);
+  background: transparent;
+  /*background: rgb(20, 30, 48);*/
   text-align: left;
   font-size: larger;
   font-style: normal;
@@ -72,8 +77,12 @@ body{
 }
 
 .nav{
+  border-bottom: 1px solid rgba(0, 140, 255, 0.363);
+  margin-left: 100px;
+  margin-right: 100px;
   grid-area: nav;
-  background: #395a80;
+  background: transparent;
+ /* background: #395a80;*/
   
 }
 
@@ -108,8 +117,9 @@ body{
 
 
 .content{
+  
   grid-area: content;
-  background: rgb(20, 30, 48);
+  background: transparent;
   display: flex;
   padding-right: 8%;
   padding-left: 8%;
@@ -124,7 +134,9 @@ body{
 
 .movie-item{
   flex-grow: 1;
-  background: rgb(10, 0, 27);
+  background: rgba(10, 0, 27, 0.267);
+  border-bottom: 1px solid rgba(0, 140, 255, 0.363);
+  border-left: 1px solid rgba(5, 5, 5, 0.699);
   color: white;
   box-shadow: 0px 0px 2px #000000;
   margin:20px;
@@ -154,17 +166,19 @@ input[type="button"]{
 }
 
 .movie-item .edit:hover{
-  background: #7e8009;
+  background: #1288e9;
 }
 
 .movie-item .delete:hover{
-  background: #690c0c;
+  background: #8a0e0e;
 }
 
 .side{
+  margin: 40px;
   grid-area: side;
-  background: rgb(20, 30, 48);
-  border-left: 1px  solid #0c002971;
+  background: rgba(10, 0, 27, 0.267);
+  border-left: 1px solid rgba(0, 0, 0, 0.363);
+  border-bottom: 1px solid rgba(0, 140, 255, 0.363);
   color: white;
 }
 
@@ -180,12 +194,16 @@ input[type="button"]{
 
 .editForm input[type='text'],
 textarea{
+  background: #d1dcfc;
   height:20px;
   width: 200px;
   display: block;
   align-items: center;
   justify-content: center;
   margin: 10px auto;
+  opacity: 3;
+  outline: 0;
+  border-width: 1px;
 }
 
 .editForm .update:hover{
@@ -199,7 +217,6 @@ textarea{
   margin: 0 auto;
   margin-top: 15px;
   padding: 12px;
-  border-radius: 5px;
   background: #d1dcfc;
   color: #000000;
   font-weight:bold;
@@ -207,7 +224,6 @@ textarea{
   opacity: 3;
   outline: 0;
   border-width: 1px;
-
 }
 
 .side textarea{
@@ -215,7 +231,6 @@ textarea{
   margin: 0 auto;
   margin-top: 15px;
   padding: 12px;
-  border-radius: 5px;
   background: #d1dcfc;
   color: #000000;
   font-weight:bold;
@@ -231,7 +246,6 @@ textarea{
   grid-area: footer;
   background: #d1defa;
   color: #454545;
-  border-top: 1px solid rgb(0, 0, 0);
   text-align: left;
   padding-left: 25px;
   margin-top: 25px;
