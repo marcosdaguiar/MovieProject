@@ -48,7 +48,11 @@ export const List = ({listState, setListState}) => {
                         
                         {/*form to edit appears here*/}
                         {edit === movie.id && (
-                            <Edit />
+                            <Edit   movie={movie}
+                                    getMovies = {getMovies}
+                                    setEdit = {setEdit}
+                                    setListState = {setListState}
+                            />
                         )}
 
                     </article>
