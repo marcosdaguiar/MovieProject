@@ -42,16 +42,17 @@ body{
 
 .logo{
   background: linear-gradient(90deg, #535972 10%, #05444d 100%);
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   border-radius: 300px;
-  margin-top: 43px;
-  box-shadow: 1px 1px 6px 2px #00aeff;
+  margin-top: 52px;
+  box-shadow: 0px 0px 4px 1px  #00aeff;
 }
 
 
 .header h1{
-  margin-left: 1px;
+  margin-left: 0px;
+  margin-right: 2px;
   margin-top:30px
 }
 
@@ -59,11 +60,11 @@ body{
 .play{
   width: 1px;
   height: 1px;
-  margin-top: 15px;
-  margin-left: 15px;
-  border-left: 15px solid rgb(250, 50, 0);
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
+  margin-top: 6px;
+  margin-left: 9px;
+  border-left: 16px solid rgb(255, 0, 0);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
 }
 
 
@@ -270,4 +271,9 @@ textarea{
   .movie-item{
       width: 80%;
   }
+}
+
+.not_found{
+  color: red;
+  font-weight: bold;
 }
