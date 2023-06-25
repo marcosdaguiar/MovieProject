@@ -4,12 +4,13 @@ body{
   background: linear-gradient(180deg,
     rgb(1, 22, 59, 1)30%,
     rgb(2, 28, 73)85%);
- /* background-color: rgb(15, 34, 68);*/
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 0px;
   margin: 0px;
 }
+
+
 /*using grid template*/
 .layout{
   width: 100%;
@@ -29,43 +30,50 @@ body{
 .header{
   grid-area: header;
   background: transparent;
-  /*background: rgb(20, 30, 48);*/
   text-align: left;
-  font-size: larger;
+  text-shadow: 2px 2px 4px #00aeff;
+  font-size: 25px;
   font-style: normal;
-  color: rgb(218, 221, 223);
+  color: rgb(223, 218, 218);
   display: flex;
   justify-content: center;
 }
 
+
 .logo{
   background: linear-gradient(90deg, #535972 10%, #05444d 100%);
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   border-radius: 300px;
-  margin-top: 40px;
+  margin-top: 52px;
+  box-shadow: 0px 0px 4px 1px  #00aeff;
 }
 
+
 .header h1{
-  margin-left: 1px;
+  margin-left: 0px;
+  margin-right: 2px;
   margin-top:30px
 }
+
 
 .play{
   width: 1px;
   height: 1px;
-  margin-top: 11px;
-  margin-left: 13px;
-  border-left: 12px solid rgb(250, 0, 0);
-  border-top: 6px solid transparent;
-  border-bottom: 6px solid transparent;
+  margin-top: 6px;
+  margin-left: 9px;
+  border-left: 16px solid rgb(255, 0, 0);
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .logo {
     animation: logo-spin infinite 10s linear;
   }
 }
+
 
 @keyframes logo-spin {
   from {
@@ -76,28 +84,28 @@ body{
   }
 }
 
+
 .nav{
   border-bottom: 1px solid rgba(0, 140, 255, 0.363);
   margin-left: 100px;
   margin-right: 100px;
   grid-area: nav;
   background: transparent;
- /* background: #395a80;*/
-  
 }
 
-.nav > ul{
-  
+
+.nav > ul{ 
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  
 }
+
 
 .nav li{
   padding: 0px;
 }
+
 
 .nav a{
   display: block;
@@ -111,13 +119,13 @@ body{
   white-space: nowrap;
 }
 
+
 .nav a:hover{
   transform: scale(1.1, 1.1);
 }
 
 
 .content{
-  
   grid-area: content;
   background: transparent;
   display: flex;
@@ -128,15 +136,12 @@ body{
   flex-flow: row wrap ;
   justify-content: flex-start;
   align-items: flex-start;
-  
-  
 }
+
 
 .movie-item{
   flex-grow: 1;
   background: rgba(10, 0, 27, 0.267);
-  border-bottom: 1px solid rgba(0, 140, 255, 0.363);
-  border-left: 1px solid rgba(5, 5, 5, 0.699);
   color: white;
   box-shadow: 0px 0px 2px #000000;
   margin:20px;
@@ -144,7 +149,9 @@ body{
   padding-bottom: 60px;
   padding-left: 25px;
   padding-right: 25px;
+  box-shadow: 2px 2px 4px rgb(2, 104, 138);
 }
+
 
 button,
 input[type="submit"],
@@ -165,22 +172,25 @@ input[type="button"]{
   transition: all 500ms;
 }
 
+
 .movie-item .edit:hover{
   background: #1288e9;
 }
+
 
 .movie-item .delete:hover{
   background: #8a0e0e;
 }
 
+
 .side{
   margin: 40px;
   grid-area: side;
   background: rgba(10, 0, 27, 0.267);
-  border-left: 1px solid rgba(0, 0, 0, 0.363);
-  border-bottom: 1px solid rgba(0, 140, 255, 0.363);
+  box-shadow: 2px 2px 4px rgb(2, 104, 138);
   color: white;
 }
+
 
 .side > div {
   box-sizing: border-box;
@@ -189,7 +199,6 @@ input[type="button"]{
   padding-top: 10px;
   background-color: e2e2e2;
 }
-
 
 
 .editForm input[type='text'],
@@ -205,6 +214,7 @@ textarea{
   outline: 0;
   border-width: 1px;
 }
+
 
 .editForm .update:hover{
   background: #128538;
@@ -226,6 +236,7 @@ textarea{
   border-width: 1px;
 }
 
+
 .side textarea{
   display: block;
   margin: 0 auto;
@@ -238,7 +249,6 @@ textarea{
   opacity: 3;
   outline: 0;
   border-width: 1px;
-
 }
 
 
@@ -255,12 +265,15 @@ textarea{
   .content{
       flex-flow: column wrap;
       justify-content: center;
-      align-items: center;
-      
+      align-items: center;     
   }
 
   .movie-item{
       width: 80%;
-
   }
+}
+
+.not_found{
+  color: red;
+  font-weight: bold;
 }

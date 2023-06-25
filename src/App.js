@@ -36,7 +36,7 @@ function App() {
         
         {/*side bar*/}
         <aside className="side">
-            <Search/>
+            <Search listState={listState} setListState = {setListState}/>
             <Create setListState={setListState}/>
         </aside>
         {/*footer*/}
