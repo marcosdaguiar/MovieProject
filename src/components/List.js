@@ -5,7 +5,6 @@ export const List = ({listState, setListState}) => {
 
     const [edit, setEdit] = useState(0);
 
-
     useEffect(() =>{
         console.log("loaded components of the list of movies");
 

@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { SaveInStorage } from './helpers/SaveInStorage';
 
+
 export const Create = ({setListState}) => {
 
     const compTitle = "Add Movie";
@@ -37,20 +38,15 @@ export const Create = ({setListState}) => {
 
         //save in the local storage
 
-        SaveInStorage("movies", movie);
-
-        
+        SaveInStorage("movies", movie); 
 
     }
-
-
-
 
 
   return (
     <div className="add">
         <h3 className="title">{compTitle}</h3>
-        
+
 
         <form onSubmit={getFormData}> 
             <input  type="text" 
@@ -61,9 +57,12 @@ export const Create = ({setListState}) => {
                     id='description'
                     name='description' 
                     placeholder="Description"></textarea>
+            
+                    
             <input  type="submit" 
                     id='save' 
                     value="Save" />
+                
         </form>
     </div>
   )
