@@ -22,15 +22,15 @@ function App() {
         {/*navigation bar*/}
         <nav className="nav">
             <ul>
-                <li><a href="/#">My Favorite Movies</a></li>
-                <li><a href="/#">Now Playing</a></li>
-                <li><a href="/#">Top Rated</a></li>
-                <li><a href="/#">Upcoming</a></li>
+                <li><a href="/#">Marcos Aguiar Favorite Movie List</a></li>
+
             </ul>
         </nav>
         {/*principal content*/}
+        
         <section className="content">
         {/*Movies goes here*/}
+
             <List listState={listState} setListState = {setListState}/>
         </section>
         

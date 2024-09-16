@@ -12,7 +12,7 @@ export const Edit = ({movie, getMovies, setEdit, setListState}) => {
 
         const savedMovieList = getMovies();
 
-       const index = savedMovieList.findIndex(movie => movie.id === id);
+        const index = savedMovieList.findIndex(movie => movie.id === id);
 
         
 
